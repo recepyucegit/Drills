@@ -1,0 +1,15 @@
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\bin\Debug\net7.0\CA_OOPTekrar_Drill.exe
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\bin\Debug\net7.0\CA_OOPTekrar_Drill.deps.json
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\bin\Debug\net7.0\CA_OOPTekrar_Drill.runtimeconfig.json
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\bin\Debug\net7.0\CA_OOPTekrar_Drill.dll
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\bin\Debug\net7.0\CA_OOPTekrar_Drill.pdb
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\obj\Debug\net7.0\CA_OOPTekrar_Drill.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\obj\Debug\net7.0\CA_OOPTekrar_Drill.AssemblyInfoInputs.cache
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\obj\Debug\net7.0\CA_OOPTekrar_Drill.AssemblyInfo.cs
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\obj\Debug\net7.0\CA_OOPTekrar_Drill.csproj.CoreCompileInputs.cache
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\obj\Debug\net7.0\CA_OOPTekrar_Drill.sourcelink.json
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\obj\Debug\net7.0\CA_OOPTekrar_Drill.dll
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\obj\Debug\net7.0\refint\CA_OOPTekrar_Drill.dll
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\obj\Debug\net7.0\CA_OOPTekrar_Drill.pdb
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\obj\Debug\net7.0\CA_OOPTekrar_Drill.genruntimeconfig.cache
+C:\Users\buse-\OneDrive\Desktop\Drills\CA_OOPTekrar_Drill\CA_OOPTekrar_Drill\obj\Debug\net7.0\ref\CA_OOPTekrar_Drill.dll

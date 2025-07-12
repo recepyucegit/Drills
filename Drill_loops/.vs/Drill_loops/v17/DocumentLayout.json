@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\Drill_loops\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6AF6644F-3486-4382-8149-143A2729F045}|CA_Drill_DoWhile\\CA_Drill_DoWhile.csproj|c:\\users\\buse-\\onedrive\\desktop\\c#\\21.06\\class\\drill_loops\\ca_drill_dowhile\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AF6644F-3486-4382-8149-143A2729F045}|CA_Drill_DoWhile\\CA_Drill_DoWhile.csproj|solutionrelative:ca_drill_dowhile\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454312E1-AAA9-4C3C-B268-F53EC1858242}|Drill_loops\\Drill_loops.csproj|c:\\users\\buse-\\onedrive\\desktop\\c#\\21.06\\class\\drill_loops\\drill_loops\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454312E1-AAA9-4C3C-B268-F53EC1858242}|Drill_loops\\Drill_loops.csproj|solutionrelative:drill_loops\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EC9EEC2-BE15-4AF3-A7A0-9FFD2F0FA743}|CA_Drill_For\\CA_Drill_For.csproj|c:\\users\\buse-\\onedrive\\desktop\\c#\\21.06\\class\\drill_loops\\ca_drill_for\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC9EEC2-BE15-4AF3-A7A0-9FFD2F0FA743}|CA_Drill_For\\CA_Drill_For.csproj|solutionrelative:ca_drill_for\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E513B86B-0C7F-4AA2-B5F5-7B44DAF59058}|CA_Drill_While\\CA_Drill_While.csproj|c:\\users\\buse-\\onedrive\\desktop\\c#\\21.06\\class\\drill_loops\\ca_drill_while\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E513B86B-0C7F-4AA2-B5F5-7B44DAF59058}|CA_Drill_While\\CA_Drill_While.csproj|solutionrelative:ca_drill_while\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\Drill_loops\\Drill_loops\\Program.cs",
+              "RelativeDocumentMoniker": "Drill_loops\\Program.cs",
+              "ToolTip": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\Drill_loops\\Drill_loops\\Program.cs",
+              "RelativeToolTip": "Drill_loops\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T11:48:42.347Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\Drill_loops\\CA_Drill_While\\Program.cs",
+              "RelativeDocumentMoniker": "CA_Drill_While\\Program.cs",
+              "ToolTip": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\Drill_loops\\CA_Drill_While\\Program.cs",
+              "RelativeToolTip": "CA_Drill_While\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T15:09:34.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\Drill_loops\\CA_Drill_DoWhile\\Program.cs",
+              "RelativeDocumentMoniker": "CA_Drill_DoWhile\\Program.cs",
+              "ToolTip": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\Drill_loops\\CA_Drill_DoWhile\\Program.cs",
+              "RelativeToolTip": "CA_Drill_DoWhile\\Program.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAKoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T13:30:40.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\Drill_loops\\CA_Drill_For\\Program.cs",
+              "RelativeDocumentMoniker": "CA_Drill_For\\Program.cs",
+              "ToolTip": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\Drill_loops\\CA_Drill_For\\Program.cs",
+              "RelativeToolTip": "CA_Drill_For\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T13:18:42.668Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

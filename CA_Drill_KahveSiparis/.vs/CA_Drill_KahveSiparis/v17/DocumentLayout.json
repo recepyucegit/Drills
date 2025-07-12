@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\CA_Drill_KahveSiparis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE5C9FF-0C2F-46D6-9F05-1DD9A5D96FC5}|CA_Drill_KahveSiparis\\CA_Drill_KahveSiparis.csproj|c:\\users\\buse-\\onedrive\\desktop\\c#\\21.06\\class\\ca_drill_kahvesiparis\\ca_drill_kahvesiparis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE5C9FF-0C2F-46D6-9F05-1DD9A5D96FC5}|CA_Drill_KahveSiparis\\CA_Drill_KahveSiparis.csproj|solutionrelative:ca_drill_kahvesiparis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\CA_Drill_KahveSiparis\\CA_Drill_KahveSiparis\\Program.cs",
+              "RelativeDocumentMoniker": "CA_Drill_KahveSiparis\\Program.cs",
+              "ToolTip": "C:\\Users\\buse-\\OneDrive\\Desktop\\C#\\21.06\\Class\\CA_Drill_KahveSiparis\\CA_Drill_KahveSiparis\\Program.cs",
+              "RelativeToolTip": "CA_Drill_KahveSiparis\\Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAADEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T18:04:43.762Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

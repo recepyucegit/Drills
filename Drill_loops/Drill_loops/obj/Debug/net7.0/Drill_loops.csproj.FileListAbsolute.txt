@@ -1,0 +1,14 @@
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\bin\Debug\net7.0\Drill_loops.exe
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\bin\Debug\net7.0\Drill_loops.deps.json
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\bin\Debug\net7.0\Drill_loops.runtimeconfig.json
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\bin\Debug\net7.0\Drill_loops.dll
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\bin\Debug\net7.0\Drill_loops.pdb
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\obj\Debug\net7.0\Drill_loops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\obj\Debug\net7.0\Drill_loops.AssemblyInfoInputs.cache
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\obj\Debug\net7.0\Drill_loops.AssemblyInfo.cs
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\obj\Debug\net7.0\Drill_loops.csproj.CoreCompileInputs.cache
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\obj\Debug\net7.0\Drill_loops.dll
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\obj\Debug\net7.0\refint\Drill_loops.dll
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\obj\Debug\net7.0\Drill_loops.pdb
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\obj\Debug\net7.0\Drill_loops.genruntimeconfig.cache
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\Drill_loops\Drill_loops\obj\Debug\net7.0\ref\Drill_loops.dll

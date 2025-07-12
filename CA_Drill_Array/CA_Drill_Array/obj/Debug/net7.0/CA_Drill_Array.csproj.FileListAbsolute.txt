@@ -1,0 +1,14 @@
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\bin\Debug\net7.0\CA_Drill_Array.exe
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\bin\Debug\net7.0\CA_Drill_Array.deps.json
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\bin\Debug\net7.0\CA_Drill_Array.runtimeconfig.json
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\bin\Debug\net7.0\CA_Drill_Array.dll
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\bin\Debug\net7.0\CA_Drill_Array.pdb
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\obj\Debug\net7.0\CA_Drill_Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\obj\Debug\net7.0\CA_Drill_Array.AssemblyInfoInputs.cache
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\obj\Debug\net7.0\CA_Drill_Array.AssemblyInfo.cs
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\obj\Debug\net7.0\CA_Drill_Array.csproj.CoreCompileInputs.cache
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\obj\Debug\net7.0\CA_Drill_Array.dll
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\obj\Debug\net7.0\refint\CA_Drill_Array.dll
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\obj\Debug\net7.0\CA_Drill_Array.pdb
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\obj\Debug\net7.0\CA_Drill_Array.genruntimeconfig.cache
+C:\Users\buse-\OneDrive\Desktop\C#\21.06\Class\CA_Drill_Array\CA_Drill_Array\obj\Debug\net7.0\ref\CA_Drill_Array.dll
