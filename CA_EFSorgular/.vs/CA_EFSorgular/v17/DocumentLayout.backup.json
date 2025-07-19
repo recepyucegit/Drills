@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\DataAccess\\CA_EFSorgular\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5E9756A-EA5C-4E5E-B7E2-A144BE8ADFFE}|CA_EFSorgular\\CA_EFSorgular.csproj|c:\\users\\buse-\\onedrive\\belgeler\\github\\dataaccess\\ca_efsorgular\\ca_efsorgular\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5E9756A-EA5C-4E5E-B7E2-A144BE8ADFFE}|CA_EFSorgular\\CA_EFSorgular.csproj|solutionrelative:ca_efsorgular\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\DataAccess\\CA_EFSorgular\\CA_EFSorgular\\Program.cs",
+              "RelativeDocumentMoniker": "CA_EFSorgular\\Program.cs",
+              "ToolTip": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\DataAccess\\CA_EFSorgular\\CA_EFSorgular\\Program.cs",
+              "RelativeToolTip": "CA_EFSorgular\\Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAgwFcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T10:08:51.217Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
