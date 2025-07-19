@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CA_OOPTekrar_Drill")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fba98e2c7e15ce74f97645d9c3e9db0e1d88bf3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+780d972d47d005a900f5b728a1b9cc0145253841")]
 [assembly: System.Reflection.AssemblyProductAttribute("CA_OOPTekrar_Drill")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CA_OOPTekrar_Drill")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
