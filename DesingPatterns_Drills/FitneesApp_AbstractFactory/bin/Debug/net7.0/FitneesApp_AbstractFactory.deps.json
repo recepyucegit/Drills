@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "FitneesApp_AbstractFactory/1.0.0": {
+        "runtime": {
+          "FitneesApp_AbstractFactory.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FitneesApp_AbstractFactory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
