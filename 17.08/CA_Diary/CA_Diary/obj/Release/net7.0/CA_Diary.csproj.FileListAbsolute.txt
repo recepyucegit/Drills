@@ -1,0 +1,15 @@
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\bin\Release\net7.0\CA_Diary.exe
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\bin\Release\net7.0\CA_Diary.deps.json
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\bin\Release\net7.0\CA_Diary.runtimeconfig.json
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\bin\Release\net7.0\CA_Diary.dll
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\bin\Release\net7.0\CA_Diary.pdb
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\obj\Release\net7.0\CA_Diary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\obj\Release\net7.0\CA_Diary.AssemblyInfoInputs.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\obj\Release\net7.0\CA_Diary.AssemblyInfo.cs
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\obj\Release\net7.0\CA_Diary.csproj.CoreCompileInputs.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\obj\Release\net7.0\CA_Diary.sourcelink.json
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\obj\Release\net7.0\CA_Diary.dll
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\obj\Release\net7.0\refint\CA_Diary.dll
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\obj\Release\net7.0\CA_Diary.pdb
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\obj\Release\net7.0\CA_Diary.genruntimeconfig.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\17.08\CA_Diary\CA_Diary\obj\Release\net7.0\ref\CA_Diary.dll

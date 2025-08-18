@@ -1,0 +1,5 @@
+C:\Users\buse-\OneDrive\Desktop\C# Çalışma Planı\CA_Diary.exe
+C:\Users\buse-\OneDrive\Desktop\C# Çalışma Planı\CA_Diary.dll
+C:\Users\buse-\OneDrive\Desktop\C# Çalışma Planı\CA_Diary.deps.json
+C:\Users\buse-\OneDrive\Desktop\C# Çalışma Planı\CA_Diary.runtimeconfig.json
+C:\Users\buse-\OneDrive\Desktop\C# Çalışma Planı\CA_Diary.pdb

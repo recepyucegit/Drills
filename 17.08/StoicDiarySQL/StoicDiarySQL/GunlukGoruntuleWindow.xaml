@@ -1,0 +1,53 @@
+﻿<Window x:Class="GunlukUygulamasi.GunlukGoruntuleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Günlükler" Height="600" Width="800">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Liste ve Silme Butonu -->
+        <StackPanel Grid.Column="0">
+            <ListBox x:Name="lstGunlukler" SelectionChanged="lstGunlukler_SelectionChanged" Height="450"/>
+            <Button Content="Sil" Click="btnSil_Click" Margin="0,10,0,0"/>
+        </StackPanel>
+
+        <!-- Günlük Düzenleme Alanı -->
+        <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="10">
+
+                <Label Content="📅 Tarih:"/>
+                <TextBlock x:Name="txtTarih" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                <GroupBox Header="Şükür Günlüğü" Margin="0,0,0,20">
+                    <StackPanel Margin="10">
+                        <Label Content="1. Şükür:"/>
+                        <TextBox x:Name="txtSukur1" Margin="0,0,0,10"/>
+                        <Label Content="2. Şükür:"/>
+                        <TextBox x:Name="txtSukur2" Margin="0,0,0,10"/>
+                        <Label Content="3. Şükür:"/>
+                        <TextBox x:Name="txtSukur3" Margin="0,0,0,10"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Stoic Günlük">
+                    <StackPanel Margin="10">
+                        <Label Content="Yanlışlarım:"/>
+                        <TextBox x:Name="txtYanlislar" Height="60" TextWrapping="Wrap" AcceptsReturn="True" Margin="0,0,0,10"/>
+                        <Label Content="Düzeltmelerim:"/>
+                        <TextBox x:Name="txtDuzeltmeler" Height="60" TextWrapping="Wrap" AcceptsReturn="True" Margin="0,0,0,10"/>
+                        <Label Content="Doğrularım:"/>
+                        <TextBox x:Name="txtDogrular" Height="60" TextWrapping="Wrap" AcceptsReturn="True" Margin="0,0,0,10"/>
+                        <Label Content="Gün İçinde Yaptıklarım:"/>
+                        <TextBox x:Name="txtGunIcinde" Height="80" TextWrapping="Wrap" AcceptsReturn="True" Margin="0,0,0,10"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <Button Content="Güncelleyerek Kaydet" Click="btnGuncelle_Click" Margin="0,10,0,0" Height="40"/>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
