@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MVC_Drills.Models.StreetliftingModels.User>
+
+<h2>Kullanıcı Listesi</h2>
+
+
+    <ul>
+        @foreach (var user in Model)
+        {
+            <li>Ürün Kullanıcı adı:@user.UserName Email:@user.Email Şifre:@user.Password</li>
+        }
+    </ul>
+
+
+<a href="/User/Create">Kullanıcı ekle</a>
