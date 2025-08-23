@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\18.08\\CA_1.g\u00FCn\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C661CEC1-F9A5-4214-A081-1CCBB4E7AD72}|CA_1.g\u00FCn\\CA_1.g\u00FCn.csproj|c:\\users\\buse-\\onedrive\\belgeler\\github\\drills\\18.08\\ca_1.g\u00FCn\\ca_1.g\u00FCn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C661CEC1-F9A5-4214-A081-1CCBB4E7AD72}|CA_1.g\u00FCn\\CA_1.g\u00FCn.csproj|solutionrelative:ca_1.g\u00FCn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\18.08\\CA_1.g\u00FCn\\CA_1.g\u00FCn\\Program.cs",
+              "RelativeDocumentMoniker": "CA_1.g\u00FCn\\Program.cs",
+              "ToolTip": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\18.08\\CA_1.g\u00FCn\\CA_1.g\u00FCn\\Program.cs",
+              "RelativeToolTip": "CA_1.g\u00FCn\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T15:15:33.214Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
