@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVC_Drills")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd8ed634e6258cb0615639b16554aa9dae82e9c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9bdb9cb1bd7ed8e97f994b2823e16a3f442c6f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVC_Drills")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVC_Drills")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
