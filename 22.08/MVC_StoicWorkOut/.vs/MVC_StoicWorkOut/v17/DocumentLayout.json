@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\22.08\\MVC_StoicWorkOut\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|c:\\users\\buse-\\onedrive\\belgeler\\github\\drills\\22.08\\mvc_stoicworkout\\mvc_drills\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|solutionrelative:mvc_drills\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|c:\\users\\buse-\\onedrive\\belgeler\\github\\drills\\22.08\\mvc_stoicworkout\\mvc_drills\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|solutionrelative:mvc_drills\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|c:\\users\\buse-\\onedrive\\belgeler\\github\\drills\\22.08\\mvc_stoicworkout\\mvc_drills\\views\\user\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|solutionrelative:mvc_drills\\views\\user\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|c:\\users\\buse-\\onedrive\\belgeler\\github\\drills\\22.08\\mvc_stoicworkout\\mvc_drills\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|solutionrelative:mvc_drills\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|c:\\users\\buse-\\onedrive\\belgeler\\github\\drills\\22.08\\mvc_stoicworkout\\mvc_drills\\views\\user\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|solutionrelative:mvc_drills\\views\\user\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|c:\\users\\buse-\\onedrive\\belgeler\\github\\drills\\22.08\\mvc_stoicworkout\\mvc_drills\\views\\user\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|c:\\users\\buse-\\onedrive\\belgeler\\github\\drills\\22.08\\mvc_stoicworkout\\mvc_drills\\views\\user\\getuserbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|solutionrelative:mvc_drills\\views\\user\\getuserbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|c:\\users\\buse-\\onedrive\\belgeler\\github\\drills\\22.08\\mvc_stoicworkout\\mvc_drills\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DBD5E75E-3EB2-40DC-BAC2-E5215E7DD889}|MVC_Drills\\MVC_Drills.csproj|solutionrelative:mvc_drills\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\22.08\\MVC_StoicWorkOut\\MVC_Drills\\Views\\User\\Delete.cshtml",
               "RelativeDocumentMoniker": "MVC_Drills\\Views\\User\\Delete.cshtml",
@@ -50,25 +50,24 @@
               "RelativeToolTip": "MVC_Drills\\Views\\User\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-23T18:12:17.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-23T18:12:17.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\22.08\\MVC_StoicWorkOut\\MVC_Drills\\Views\\User\\Index.cshtml",
               "RelativeDocumentMoniker": "MVC_Drills\\Views\\User\\Index.cshtml",
               "ToolTip": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\22.08\\MVC_StoicWorkOut\\MVC_Drills\\Views\\User\\Index.cshtml",
               "RelativeToolTip": "MVC_Drills\\Views\\User\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-23T18:01:22.193Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "GetUserById.cshtml",
               "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\22.08\\MVC_StoicWorkOut\\MVC_Drills\\Views\\User\\GetUserById.cshtml",
               "RelativeDocumentMoniker": "MVC_Drills\\Views\\User\\GetUserById.cshtml",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "MVC_Drills\\Views\\User\\GetUserById.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-23T17:39:54.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-23T17:39:54.525Z"
             },
             {
               "$type": "Document",
@@ -94,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\22.08\\MVC_StoicWorkOut\\MVC_Drills\\Views\\User\\Update.cshtml",
               "RelativeDocumentMoniker": "MVC_Drills\\Views\\User\\Update.cshtml",
@@ -102,18 +100,17 @@
               "RelativeToolTip": "MVC_Drills\\Views\\User\\Update.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-23T17:38:56.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-23T17:38:56.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\22.08\\MVC_StoicWorkOut\\MVC_Drills\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "MVC_Drills\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\22.08\\MVC_StoicWorkOut\\MVC_Drills\\Controllers\\UserController.cs",
               "RelativeToolTip": "MVC_Drills\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAAAF4AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-23T17:37:20.346Z",
               "EditorCaption": ""
