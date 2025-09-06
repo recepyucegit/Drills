@@ -1,0 +1,9 @@
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\AlışkanlıkTakibi\AlışkanlıkTakibi\bin\Debug\AlışkanlıkTakibi.exe.config
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\AlışkanlıkTakibi\AlışkanlıkTakibi\bin\Debug\AlışkanlıkTakibi.exe
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\AlışkanlıkTakibi\AlışkanlıkTakibi\bin\Debug\AlışkanlıkTakibi.pdb
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\AlışkanlıkTakibi\AlışkanlıkTakibi\obj\Debug\AlışkanlıkTakibi.csproj.AssemblyReference.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\AlışkanlıkTakibi\AlışkanlıkTakibi\obj\Debug\AlışkanlıkTakibi.Properties.Resources.resources
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\AlışkanlıkTakibi\AlışkanlıkTakibi\obj\Debug\AlışkanlıkTakibi.csproj.GenerateResource.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\AlışkanlıkTakibi\AlışkanlıkTakibi\obj\Debug\AlışkanlıkTakibi.csproj.CoreCompileInputs.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\AlışkanlıkTakibi\AlışkanlıkTakibi\obj\Debug\AlışkanlıkTakibi.exe
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\AlışkanlıkTakibi\AlışkanlıkTakibi\obj\Debug\AlışkanlıkTakibi.pdb

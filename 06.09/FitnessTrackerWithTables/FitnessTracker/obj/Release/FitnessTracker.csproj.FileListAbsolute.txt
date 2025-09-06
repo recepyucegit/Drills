@@ -7,3 +7,4 @@ C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\Fi
 C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\obj\Release\FitnessTracker.csproj.CoreCompileInputs.cache
 C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\obj\Release\FitnessTracker.exe
 C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\obj\Release\FitnessTracker.pdb
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\obj\Release\FitnessTracker.exe.config

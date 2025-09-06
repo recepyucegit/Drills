@@ -1,0 +1,9 @@
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\StoicWorkoutWithRPE\StoicWorkoutWithRPE\bin\Release\StoicWorkoutWithRPE.exe.config
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\StoicWorkoutWithRPE\StoicWorkoutWithRPE\bin\Release\StoicWorkoutWithRPE.exe
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\StoicWorkoutWithRPE\StoicWorkoutWithRPE\bin\Release\StoicWorkoutWithRPE.pdb
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\StoicWorkoutWithRPE\StoicWorkoutWithRPE\obj\Release\StoicWorkoutWithRPE.csproj.AssemblyReference.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\StoicWorkoutWithRPE\StoicWorkoutWithRPE\obj\Release\StoicWorkoutWithRPE.Properties.Resources.resources
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\StoicWorkoutWithRPE\StoicWorkoutWithRPE\obj\Release\StoicWorkoutWithRPE.csproj.GenerateResource.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\StoicWorkoutWithRPE\StoicWorkoutWithRPE\obj\Release\StoicWorkoutWithRPE.csproj.CoreCompileInputs.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\StoicWorkoutWithRPE\StoicWorkoutWithRPE\obj\Release\StoicWorkoutWithRPE.exe
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\StoicWorkoutWithRPE\StoicWorkoutWithRPE\obj\Release\StoicWorkoutWithRPE.pdb
