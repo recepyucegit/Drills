@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D248F0F-D679-4A9F-A8BB-7BE7BC805267}|FitnessTracker\\FitnessTracker.csproj|c:\\users\\buse-\\onedrive\\belgeler\\github\\drills\\06.09\\fitnesstrackerwithtables\\fitnesstracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D248F0F-D679-4A9F-A8BB-7BE7BC805267}|FitnessTracker\\FitnessTracker.csproj|solutionrelative:fitnesstracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D248F0F-D679-4A9F-A8BB-7BE7BC805267}|FitnessTracker\\FitnessTracker.csproj|C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\fitnesstracker\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7D248F0F-D679-4A9F-A8BB-7BE7BC805267}|FitnessTracker\\FitnessTracker.csproj|solutionrelative:fitnesstracker\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D248F0F-D679-4A9F-A8BB-7BE7BC805267}|FitnessTracker\\FitnessTracker.csproj|C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\fitnesstracker\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D248F0F-D679-4A9F-A8BB-7BE7BC805267}|FitnessTracker\\FitnessTracker.csproj|solutionrelative:fitnesstracker\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D248F0F-D679-4A9F-A8BB-7BE7BC805267}|FitnessTracker\\FitnessTracker.csproj|C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\fitnesstracker\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D248F0F-D679-4A9F-A8BB-7BE7BC805267}|FitnessTracker\\FitnessTracker.csproj|solutionrelative:fitnesstracker\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\FitnessTracker\\Program.cs",
+              "RelativeDocumentMoniker": "FitnessTracker\\Program.cs",
+              "ToolTip": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\FitnessTracker\\Program.cs",
+              "RelativeToolTip": "FitnessTracker\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T14:52:39.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\FitnessTracker\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "FitnessTracker\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\FitnessTracker\\MainForm.Designer.cs",
+              "RelativeToolTip": "FitnessTracker\\MainForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T14:51:19.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\FitnessTracker\\MainForm.cs",
+              "RelativeDocumentMoniker": "FitnessTracker\\MainForm.cs",
+              "ToolTip": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\FitnessTracker\\MainForm.cs",
+              "RelativeToolTip": "FitnessTracker\\MainForm.cs",
+              "ViewState": "AgIAAKMBAAAAAAAAAAAAAMEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T14:50:25.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\FitnessTracker\\MainForm.cs",
+              "RelativeDocumentMoniker": "FitnessTracker\\MainForm.cs",
+              "ToolTip": "C:\\Users\\buse-\\OneDrive\\Belgeler\\GitHub\\Drills\\06.09\\FitnessTrackerWithTables\\FitnessTracker\\MainForm.cs [Design]",
+              "RelativeToolTip": "FitnessTracker\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T14:50:22.892Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

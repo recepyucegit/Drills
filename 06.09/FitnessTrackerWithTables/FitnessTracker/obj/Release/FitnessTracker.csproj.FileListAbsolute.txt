@@ -1,0 +1,9 @@
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\bin\Release\FitnessTracker.exe.config
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\bin\Release\FitnessTracker.exe
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\bin\Release\FitnessTracker.pdb
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\obj\Release\FitnessTracker.csproj.AssemblyReference.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\obj\Release\FitnessTracker.Properties.Resources.resources
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\obj\Release\FitnessTracker.csproj.GenerateResource.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\obj\Release\FitnessTracker.csproj.CoreCompileInputs.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\obj\Release\FitnessTracker.exe
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\FitnessTrackerWithTables\FitnessTracker\obj\Release\FitnessTracker.pdb
