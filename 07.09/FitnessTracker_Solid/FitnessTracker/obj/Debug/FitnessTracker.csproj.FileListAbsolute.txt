@@ -1,0 +1,4 @@
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\SOLID_FitnessTracker\SOLID_FitnessTracker\obj\Debug\FitnessTracker.csproj.AssemblyReference.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\SOLID_FitnessTracker\SOLID_FitnessTracker\obj\Debug\SOLID_FitnessTracker.Properties.Resources.resources
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\SOLID_FitnessTracker\SOLID_FitnessTracker\obj\Debug\FitnessTracker.csproj.GenerateResource.cache
+C:\Users\buse-\OneDrive\Belgeler\GitHub\Drills\06.09\SOLID_FitnessTracker\SOLID_FitnessTracker\obj\Debug\FitnessTracker.csproj.CoreCompileInputs.cache
