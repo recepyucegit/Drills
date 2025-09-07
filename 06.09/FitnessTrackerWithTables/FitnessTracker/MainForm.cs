@@ -4,6 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace FitnessTracker
 {
@@ -14,18 +15,20 @@ namespace FitnessTracker
         private Button btnCalculate;
         private Button btnSave;
         private Button btnViewHistory;
-        private Panel pnlWorkoutTable;
-        private string currentWorkoutData = "";
-        private List<ExerciseResult> exerciseResults;
 
-        // Takvim için kontroller
+        private Chart chartProgress;
+        private Panel pnlChart;
+
         private Panel pnlCalendar;
         private Label lblCalendarTitle;
         private Button btnPrevMonth;
         private Button btnNextMonth;
         private Label lblMonthYear;
+
         private Dictionary<DateTime, bool> workoutDays;
         private DateTime currentCalendarMonth;
+
+        private List<ExerciseResult> exerciseResults;
 
         public MainForm()
         {
@@ -33,20 +36,18 @@ namespace FitnessTracker
             exerciseResults = new List<ExerciseResult>();
             workoutDays = new Dictionary<DateTime, bool>();
             currentCalendarMonth = DateTime.Now;
-            LoadWorkoutDaysFromFile(); // Geçmiş antrenman günlerini yükle
-            UpdateCalendar(); // Takvimi başlat
+            LoadWorkoutDaysFromFile();
+            UpdateCalendar();
+            UpdateChart();
         }
 
         private void InitializeComponent()
         {
-            // ✅ TAM EKRAN AYARI
-            this.WindowState = FormWindowState.Maximized;
+            this.Size = new Size(900, 700);
             this.Text = "Fitness Takip Uygulaması - Çoklu Egzersiz";
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-
-            int formWidth = Screen.PrimaryScreen.WorkingArea.Width;
-            int formHeight = Screen.PrimaryScreen.WorkingArea.Height;
+            this.MaximizeBox = false;
 
             // Exercise Count
             Label lblExerciseCount = new Label()
@@ -54,7 +55,7 @@ namespace FitnessTracker
                 Text = "Egzersiz Sayısı:",
                 Location = new Point(20, 20),
                 Size = new Size(120, 20),
-                Font = new Font("Arial", 10, FontStyle.Bold) // ✅ DÜZELTİLDİ
+                Font = new Font("Arial", 10, FontStyle.Bold)
             };
             this.Controls.Add(lblExerciseCount);
 
@@ -62,7 +63,7 @@ namespace FitnessTracker
             {
                 Location = new Point(150, 18),
                 Size = new Size(100, 25),
-                Font = new Font("Arial", 10),
+                Font = new Font("Arial", 10, FontStyle.Bold),
                 Minimum = 1,
                 Maximum = 10,
                 Value = 3
@@ -74,36 +75,38 @@ namespace FitnessTracker
             dgvExercises = new DataGridView()
             {
                 Location = new Point(20, 60),
-                Size = new Size(formWidth - 40, 200),
-                Font = new Font("Arial", 9),
+                Size = new Size(850, 200),
+                Font = new Font("Arial", 9, FontStyle.Bold),
                 AllowUserToAddRows = false,
                 AllowUserToDeleteRows = false,
                 RowHeadersVisible = false,
                 AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
             };
+            dgvExercises.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 9, FontStyle.Bold);
             this.Controls.Add(dgvExercises);
 
             SetupDataGridView();
 
-            // Buttons
+            // Calculate button
             btnCalculate = new Button()
             {
                 Text = "Hesapla",
                 Location = new Point(20, 280),
                 Size = new Size(100, 40),
-                Font = new Font("Arial", 12, FontStyle.Bold), // ✅ DÜZELTİLDİ
+                Font = new Font("Arial", 12, FontStyle.Bold),
                 BackColor = Color.LightBlue,
                 UseVisualStyleBackColor = false
             };
             btnCalculate.Click += BtnCalculate_Click;
             this.Controls.Add(btnCalculate);
 
+            // Save button
             btnSave = new Button()
             {
                 Text = "Kaydet",
                 Location = new Point(130, 280),
                 Size = new Size(100, 40),
-                Font = new Font("Arial", 12, FontStyle.Bold), // ✅ DÜZELTİLDİ
+                Font = new Font("Arial", 12, FontStyle.Bold),
                 BackColor = Color.LightGreen,
                 UseVisualStyleBackColor = false,
                 Enabled = false
@@ -111,60 +114,79 @@ namespace FitnessTracker
             btnSave.Click += BtnSave_Click;
             this.Controls.Add(btnSave);
 
+            // View History button
             btnViewHistory = new Button()
             {
                 Text = "Geçmiş Görüntüle",
                 Location = new Point(240, 280),
                 Size = new Size(120, 40),
-                Font = new Font("Arial", 12, FontStyle.Bold), // ✅ DÜZELTİLDİ
+                Font = new Font("Arial", 12, FontStyle.Bold),
                 BackColor = Color.LightYellow,
                 UseVisualStyleBackColor = false
             };
             btnViewHistory.Click += BtnViewHistory_Click;
             this.Controls.Add(btnViewHistory);
 
-            // Workout Summary Label
-            Label lblSummaryTitle = new Label()
+            // === GRAFİK PANELI (SOL) ===
+            Label lblChartTitle = new Label()
             {
-                Text = "İDMAN TABLOSU:",
+                Text = "AĞIRLIK GELİŞİM GRAFİĞİ",
                 Location = new Point(20, 340),
-                Size = new Size(200, 25),
-                Font = new Font("Arial", 14, FontStyle.Bold), // ✅ DÜZELTİLDİ
-                ForeColor = Color.DarkBlue
+                Size = new Size(450, 25),
+                Font = new Font("Arial", 14, FontStyle.Bold),
+                ForeColor = Color.DarkBlue,
+                TextAlign = ContentAlignment.MiddleCenter
             };
-            this.Controls.Add(lblSummaryTitle);
+            this.Controls.Add(lblChartTitle);
 
-            // Workout Table Panel (Sol tarafta - formun %45'i)
-            int leftPanelWidth = (int)(formWidth * 0.45);
-            pnlWorkoutTable = new Panel()
+            pnlChart = new Panel()
             {
                 Location = new Point(20, 370),
-                Size = new Size(leftPanelWidth - 40, formHeight - 450),
+                Size = new Size(450, 280),
                 BorderStyle = BorderStyle.FixedSingle,
-                AutoScroll = true,
                 BackColor = Color.White
             };
-            this.Controls.Add(pnlWorkoutTable);
+            this.Controls.Add(pnlChart);
 
-            // Calendar Title (Sağ tarafta)
+            chartProgress = new Chart()
+            {
+                Dock = DockStyle.Fill,
+                BackColor = Color.White
+            };
+
+            var chartArea = new ChartArea("MainArea")
+            {
+                AxisX = { Title = "Tarih", LabelStyle = { Angle = -45, Font = new Font("Arial", 9, FontStyle.Bold) }, TitleFont = new Font("Arial", 10, FontStyle.Bold) },
+                AxisY = { Title = "Ağırlık (kg)", LabelStyle = { Font = new Font("Arial", 9, FontStyle.Bold) }, TitleFont = new Font("Arial", 10, FontStyle.Bold) }
+            };
+            chartProgress.ChartAreas.Add(chartArea);
+
+            chartProgress.Legends.Add(new Legend("Legend")
+            {
+                Docking = Docking.Bottom,
+                Font = new Font("Arial", 10, FontStyle.Bold)
+            });
+
+            pnlChart.Controls.Add(chartProgress);
+
+            // === TAKVİM PANELI (SAĞ) ===
             lblCalendarTitle = new Label()
             {
                 Text = "ANTRENMAN TAKVİMİ",
-                Location = new Point(leftPanelWidth + 20, 340),
-                Size = new Size(250, 25),
-                Font = new Font("Arial", 12, FontStyle.Bold), // ✅ DÜZELTİLDİ
+                Location = new Point(480, 340),
+                Size = new Size(400, 25),
+                Font = new Font("Arial", 14, FontStyle.Bold),
                 ForeColor = Color.DarkRed,
                 TextAlign = ContentAlignment.MiddleCenter
             };
             this.Controls.Add(lblCalendarTitle);
 
-            // Month Navigation
             btnPrevMonth = new Button()
             {
                 Text = "←",
-                Location = new Point(leftPanelWidth + 20, 370),
+                Location = new Point(480, 370),
                 Size = new Size(40, 30),
-                Font = new Font("Arial", 12, FontStyle.Bold) // ✅ DÜZELTİLDİ
+                Font = new Font("Arial", 12, FontStyle.Bold)
             };
             btnPrevMonth.Click += (s, e) => ChangeMonth(-1);
             this.Controls.Add(btnPrevMonth);
@@ -172,9 +194,9 @@ namespace FitnessTracker
             lblMonthYear = new Label()
             {
                 Text = "",
-                Location = new Point(leftPanelWidth + 70, 370),
+                Location = new Point(530, 370),
                 Size = new Size(150, 30),
-                Font = new Font("Arial", 12, FontStyle.Bold), // ✅ DÜZELTİLDİ
+                Font = new Font("Arial", 12, FontStyle.Bold),
                 TextAlign = ContentAlignment.MiddleCenter
             };
             this.Controls.Add(lblMonthYear);
@@ -182,19 +204,17 @@ namespace FitnessTracker
             btnNextMonth = new Button()
             {
                 Text = "→",
-                Location = new Point(leftPanelWidth + 230, 370),
+                Location = new Point(690, 370),
                 Size = new Size(40, 30),
-                Font = new Font("Arial", 12, FontStyle.Bold) // ✅ DÜZELTİLDİ
+                Font = new Font("Arial", 12, FontStyle.Bold)
             };
             btnNextMonth.Click += (s, e) => ChangeMonth(1);
             this.Controls.Add(btnNextMonth);
 
-            // Calendar Panel (Sağ tarafta - formun %55'i)
-            int rightPanelWidth = formWidth - leftPanelWidth - 60;
             pnlCalendar = new Panel()
             {
-                Location = new Point(leftPanelWidth + 20, 410),
-                Size = new Size(rightPanelWidth, formHeight - 490),
+                Location = new Point(480, 410),
+                Size = new Size(400, 240),
                 BorderStyle = BorderStyle.FixedSingle,
                 BackColor = Color.White
             };
@@ -312,94 +332,7 @@ namespace FitnessTracker
 
             if (!hasError && exerciseResults.Count > 0)
             {
-                DisplayWorkoutTable();
-                PrepareWorkoutData();
                 btnSave.Enabled = true;
-            }
-        }
-
-        private void DisplayWorkoutTable()
-        {
-            pnlWorkoutTable.Controls.Clear();
-
-            Label headerLabel = new Label()
-            {
-                Text = "EGZERSİZ                    MEVCUT KİLO    SETLER        EN DÜŞÜK   SONRAKİ KİLO   ARTIŞ",
-                Location = new Point(10, 10),
-                Size = new Size(pnlWorkoutTable.Width - 20, 25),
-                Font = new Font("Consolas", 10, FontStyle.Bold), // ✅ DÜZELTİLDİ
-                BackColor = Color.LightGray,
-                BorderStyle = BorderStyle.FixedSingle
-            };
-            pnlWorkoutTable.Controls.Add(headerLabel);
-
-            int yPosition = 40;
-            foreach (var result in exerciseResults)
-            {
-                string setsText = string.Join("-", result.Reps);
-                string increaseText = result.WeightIncrease > 0 ? $"+{result.WeightIncrease}kg" : "Artırım Yok";
-
-                string exerciseName = result.ExerciseName.Length > 20 ? result.ExerciseName.Substring(0, 17) + "..." : result.ExerciseName.PadRight(20);
-                string currentWeight = $"{result.CurrentWeight}kg".PadRight(12);
-                string sets = setsText.PadRight(12);
-                string minReps = result.MinReps.ToString().PadRight(9);
-                string nextWeight = $"{result.NextWeight}kg".PadRight(12);
-
-                Label exerciseLabel = new Label()
-                {
-                    Text = $"{exerciseName}  {currentWeight}  {sets}  {minReps}  {nextWeight}  {increaseText}",
-                    Location = new Point(10, yPosition),
-                    Size = new Size(pnlWorkoutTable.Width - 20, 25),
-                    Font = new Font("Consolas", 9),
-                    BackColor = yPosition % 60 == 40 ? Color.White : Color.AliceBlue,
-                    BorderStyle = BorderStyle.FixedSingle
-                };
-                pnlWorkoutTable.Controls.Add(exerciseLabel);
-
-                yPosition += 30;
-            }
-
-            Label summaryLabel = new Label()
-            {
-                Text = $"Toplam {exerciseResults.Count} egzersiz tamamlandı - {DateTime.Now.ToString("dd.MM.yyyy HH:mm")}",
-                Location = new Point(10, yPosition + 10),
-                Size = new Size(pnlWorkoutTable.Width - 20, 25),
-                Font = new Font("Arial", 10, FontStyle.Bold), // ✅ DÜZELTİLDİ
-                ForeColor = Color.DarkGreen
-            };
-            pnlWorkoutTable.Controls.Add(summaryLabel);
-        }
-
-        private void PrepareWorkoutData()
-        {
-            currentWorkoutData = $"================================\n";
-            currentWorkoutData += $"İDMAN TARİHİ: {DateTime.Now.ToString("dd.MM.yyyy HH:mm")}\n";
-            currentWorkoutData += $"TOPLAM EGZERSİZ: {exerciseResults.Count}\n";
-            currentWorkoutData += $"================================\n\n";
-
-            foreach (var result in exerciseResults)
-            {
-                currentWorkoutData += $"EGZERSİZ: {result.ExerciseName}\n";
-                currentWorkoutData += $"AĞIRLIK: {result.CurrentWeight} kg\n";
-                currentWorkoutData += $"SET SAYISI: {result.SetCount}\n";
-
-                for (int i = 0; i < result.Reps.Count; i++)
-                {
-                    currentWorkoutData += $"  {i + 1}. Set: {result.Reps[i]} tekrar\n";
-                }
-
-                currentWorkoutData += $"En Düşük Tekrar: {result.MinReps}\n";
-
-                if (result.WeightIncrease > 0)
-                {
-                    currentWorkoutData += $"Sonraki Ağırlık: {result.NextWeight} kg (+{result.WeightIncrease} kg)\n";
-                }
-                else
-                {
-                    currentWorkoutData += $"Sonraki Ağırlık: {result.NextWeight} kg (Artırım Yok - Tekrar Sayısını Arttır)\n";
-                }
-
-                currentWorkoutData += new string('-', 40) + "\n";
             }
         }
 
@@ -407,30 +340,51 @@ namespace FitnessTracker
         {
             try
             {
-                string fileName = "fitness_log.txt";
-                string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FitnessTracker");
+                DateTime now = DateTime.Now;
+                string dailyFilePath = GetDailyFilePath(now.Date);
 
-                if (!Directory.Exists(folderPath))
-                    Directory.CreateDirectory(folderPath);
-
-                string filePath = Path.Combine(folderPath, fileName);
-
-                using (StreamWriter sw = File.AppendText(filePath))
+                using (StreamWriter sw = File.AppendText(dailyFilePath))
                 {
-                    sw.WriteLine(currentWorkoutData);
-                    sw.WriteLine(new string('=', 60));
-                    sw.WriteLine();
+                    sw.WriteLine($"================================");
+                    sw.WriteLine($"İDMAN TARİHİ: {now.ToString("dd.MM.yyyy HH:mm")}");
+                    sw.WriteLine($"TOPLAM EGZERSİZ: {exerciseResults.Count}");
+                    sw.WriteLine($"================================\n");
+
+                    foreach (var result in exerciseResults)
+                    {
+                        sw.WriteLine($"EGZERSİZ: {result.ExerciseName}");
+                        sw.WriteLine($"AĞIRLIK: {result.CurrentWeight} kg");
+                        sw.WriteLine($"SET SAYISI: {result.SetCount}");
+
+                        for (int i = 0; i < result.Reps.Count; i++)
+                        {
+                            sw.WriteLine($"  {i + 1}. Set: {result.Reps[i]} tekrar");
+                        }
+
+                        sw.WriteLine($"En Düşük Tekrar: {result.MinReps}");
+
+                        if (result.WeightIncrease > 0)
+                        {
+                            sw.WriteLine($"Sonraki Ağırlık: {result.NextWeight} kg (+{result.WeightIncrease} kg)");
+                        }
+                        else
+                        {
+                            sw.WriteLine($"Sonraki Ağırlık: {result.NextWeight} kg (Artırım Yok - Tekrar Sayısını Arttır)");
+                        }
+
+                        sw.WriteLine(new string('-', 40) + "\n");
+                    }
                 }
 
-                // Takvime ekle
-                DateTime today = DateTime.Now.Date;
-                workoutDays[today] = true;
-                UpdateCalendar();
-
-                MessageBox.Show($"Antrenman kaydedildi!\nDosya konumu: {filePath}", "Başarılı",
+                MessageBox.Show($"Antrenman kaydedildi!\nDosya: {dailyFilePath}", "Başarılı",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 btnSave.Enabled = false;
+
+                DateTime today = DateTime.Now.Date;
+                workoutDays[today] = true;
+                UpdateCalendar();
+                UpdateChart();
             }
             catch (Exception ex)
             {
@@ -443,9 +397,8 @@ namespace FitnessTracker
         {
             try
             {
-                string fileName = "fitness_log.txt";
-                string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FitnessTracker");
-                string filePath = Path.Combine(folderPath, fileName);
+                string logsFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FitnessTracker", "DailyLogs");
+                string filePath = Path.Combine(logsFolder, DateTime.Now.ToString("dd.MM.yyyy") + ".txt");
 
                 if (File.Exists(filePath))
                 {
@@ -453,7 +406,7 @@ namespace FitnessTracker
 
                     Form historyForm = new Form()
                     {
-                        Text = "Antrenman Geçmişi",
+                        Text = "Bugünkü Antrenman Geçmişi",
                         Size = new Size(700, 600),
                         StartPosition = FormStartPosition.CenterParent
                     };
@@ -464,7 +417,7 @@ namespace FitnessTracker
                         ReadOnly = true,
                         ScrollBars = ScrollBars.Vertical,
                         Dock = DockStyle.Fill,
-                        Font = new Font("Consolas", 9),
+                        Font = new Font("Consolas", 9, FontStyle.Bold),
                         Text = content
                     };
 
@@ -484,40 +437,32 @@ namespace FitnessTracker
             }
         }
 
-        private decimal CalculateWeightIncrease(int minReps)
+        private string GetDailyFilePath(DateTime date)
         {
-            if (minReps <= 5)
-                return 0m;
-            else if (minReps == 6)
-                return 1.25m;
-            else if (minReps == 7)
-                return 2.5m;
-            else if (minReps >= 8)
-                return 5m;
-            else
-                return 0m;
+            string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FitnessTracker", "DailyLogs");
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+
+            string fileName = date.ToString("dd.MM.yyyy") + ".txt";
+            return Path.Combine(folderPath, fileName);
         }
 
-        // Takvim Metotları
         private void UpdateCalendar()
         {
             pnlCalendar.Controls.Clear();
-
             lblMonthYear.Text = currentCalendarMonth.ToString("MMMM yyyy", new System.Globalization.CultureInfo("tr-TR"));
 
             string[] dayHeaders = { "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt", "Paz" };
-            int cellWidth = pnlCalendar.Width / 7 - 5;
             for (int i = 0; i < 7; i++)
             {
                 Label dayLabel = new Label()
                 {
                     Text = dayHeaders[i],
-                    Location = new Point(i * (cellWidth + 5) + 5, 5),
-                    Size = new Size(cellWidth, 30),
-                    Font = new Font("Arial", 10, FontStyle.Bold), // ✅ DÜZELTİLDİ
+                    Location = new Point(i * 50 + 10, 5),
+                    Size = new Size(40, 20),
+                    Font = new Font("Arial", 9, FontStyle.Bold),
                     TextAlign = ContentAlignment.MiddleCenter,
-                    BackColor = Color.LightGray,
-                    BorderStyle = BorderStyle.FixedSingle
+                    BackColor = Color.LightGray
                 };
                 pnlCalendar.Controls.Add(dayLabel);
             }
@@ -530,51 +475,48 @@ namespace FitnessTracker
             startDayIndex--;
 
             int day = 1;
-            int y = 40;
-            int rowHeight = 45;
+            int y = 30;
 
             for (int week = 0; week < 6; week++)
             {
                 for (int col = 0; col < 7; col++)
                 {
-                    int x = col * (cellWidth + 5) + 5;
+                    int x = col * 50 + 10;
 
-                    if (week == 0 && col < startDayIndex)
-                    {
-                        continue;
-                    }
-
-                    if (day > lastDayOfMonth.Day)
-                        break;
+                    if (week == 0 && col < startDayIndex) continue;
+                    if (day > lastDayOfMonth.Day) break;
 
                     DateTime currentDate = new DateTime(currentCalendarMonth.Year, currentCalendarMonth.Month, day);
-
                     Label dayBox = new Label()
                     {
                         Text = day.ToString(),
                         Location = new Point(x, y),
-                        Size = new Size(cellWidth, rowHeight),
-                        Font = new Font("Arial", 11, FontStyle.Bold), // ✅ DÜZELTİLDİ
+                        Size = new Size(40, 40),
+                        Font = new Font("Arial", 10, FontStyle.Bold),
                         TextAlign = ContentAlignment.MiddleCenter,
                         BorderStyle = BorderStyle.FixedSingle,
-                        BackColor = currentDate.Date == DateTime.Today ? Color.LightYellow : Color.WhiteSmoke,
+                        BackColor = currentDate.Date == DateTime.Today ? Color.LightYellow : Color.White,
                         Tag = currentDate
                     };
 
+                    if (currentDate.Date == DateTime.Today)
+                    {
+                        dayBox.Font = new Font("Arial", 10, FontStyle.Bold);
+                    }
+
                     if (workoutDays.ContainsKey(currentDate.Date) && workoutDays[currentDate.Date])
                     {
-                        dayBox.Text += "\n✓";
+                        dayBox.Text += "\n✗";
                         dayBox.ForeColor = Color.Green;
+                        dayBox.Font = new Font("Arial", 10, FontStyle.Bold);
                     }
 
                     dayBox.Click += DayBox_Click;
-
                     pnlCalendar.Controls.Add(dayBox);
                     day++;
-
                     if (day > lastDayOfMonth.Day) break;
                 }
-                y += rowHeight + 5;
+                y += 40;
                 if (day > lastDayOfMonth.Day) break;
             }
         }
@@ -589,97 +531,149 @@ namespace FitnessTracker
         {
             if (sender is Label dayBox && dayBox.Tag is DateTime clickedDate)
             {
-                string fileName = "fitness_log.txt";
-                string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FitnessTracker");
-                string filePath = Path.Combine(folderPath, fileName);
+                string logsFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FitnessTracker", "DailyLogs");
+                string filePath = Path.Combine(logsFolder, clickedDate.ToString("dd.MM.yyyy") + ".txt");
 
                 if (!File.Exists(filePath))
                 {
-                    MessageBox.Show("Henüz kayıtlı antrenman bulunamadı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"{clickedDate:dd MMMM yyyy} tarihinde antrenman kaydı bulunamadı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
-                string[] lines = File.ReadAllLines(filePath);
-                List<string> entriesForDate = new List<string>();
-                bool inTargetDate = false;
-                string targetDateString = clickedDate.ToString("dd.MM.yyyy");
+                string content = File.ReadAllText(filePath);
 
-                foreach (string line in lines)
+                Form detailForm = new Form()
                 {
-                    if (line.Contains($"İDMAN TARİHİ: {targetDateString}"))
-                    {
-                        inTargetDate = true;
-                        entriesForDate.Add(line);
-                    }
-                    else if (inTargetDate && line.StartsWith("================================"))
-                    {
-                        break;
-                    }
-                    else if (inTargetDate)
-                    {
-                        entriesForDate.Add(line);
-                    }
-                }
+                    Text = $"{clickedDate:dd MMMM yyyy} Antrenman Detayları",
+                    Size = new Size(600, 500),
+                    StartPosition = FormStartPosition.CenterParent
+                };
 
-                if (entriesForDate.Count > 0)
+                TextBox txtDetail = new TextBox()
                 {
-                    string content = string.Join("\n", entriesForDate);
+                    Multiline = true,
+                    ReadOnly = true,
+                    ScrollBars = ScrollBars.Vertical,
+                    Dock = DockStyle.Fill,
+                    Font = new Font("Consolas", 9, FontStyle.Bold),
+                    Text = content
+                };
 
-                    Form detailForm = new Form()
-                    {
-                        Text = $"{clickedDate:dd MMMM yyyy} Antrenman Detayları",
-                        Size = new Size(600, 500),
-                        StartPosition = FormStartPosition.CenterParent
-                    };
-
-                    TextBox txtDetail = new TextBox()
-                    {
-                        Multiline = true,
-                        ReadOnly = true,
-                        ScrollBars = ScrollBars.Vertical,
-                        Dock = DockStyle.Fill,
-                        Font = new Font("Consolas", 9),
-                        Text = content
-                    };
-
-                    detailForm.Controls.Add(txtDetail);
-                    detailForm.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show($"{clickedDate:dd MMMM yyyy} tarihinde antrenman kaydı bulunamadı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                detailForm.Controls.Add(txtDetail);
+                detailForm.ShowDialog();
             }
         }
 
         private void LoadWorkoutDaysFromFile()
         {
             workoutDays.Clear();
-            string fileName = "fitness_log.txt";
-            string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FitnessTracker");
-            string filePath = Path.Combine(folderPath, fileName);
+            string logsFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FitnessTracker", "DailyLogs");
 
-            if (!File.Exists(filePath)) return;
+            if (!Directory.Exists(logsFolder)) return;
 
-            try
+            var dailyFiles = Directory.GetFiles(logsFolder, "*.txt")
+                .Where(f => Path.GetFileName(f).Length == 14 && Path.GetFileName(f)[2] == '.' && Path.GetFileName(f)[5] == '.')
+                .ToList();
+
+            foreach (string file in dailyFiles)
             {
-                string[] lines = File.ReadAllLines(filePath);
-                foreach (string line in lines)
+                string fileName = Path.GetFileNameWithoutExtension(file);
+                if (DateTime.TryParseExact(fileName, "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime workoutDate))
                 {
-                    if (line.StartsWith("İDMAN TARİHİ: "))
+                    workoutDays[workoutDate.Date] = true;
+                }
+            }
+        }
+
+        private void UpdateChart()
+        {
+            chartProgress.Series.Clear();
+
+            string logsFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FitnessTracker", "DailyLogs");
+            if (!Directory.Exists(logsFolder)) return;
+
+            var dailyFiles = Directory.GetFiles(logsFolder, "*.txt")
+                .Where(f => Path.GetFileName(f).Length == 14 && Path.GetFileName(f)[2] == '.' && Path.GetFileName(f)[5] == '.')
+                .OrderBy(f => File.GetCreationTime(f))
+                .ToList();
+
+            var exerciseData = new Dictionary<string, List<(DateTime Date, decimal Weight)>>();
+
+            foreach (string file in dailyFiles)
+            {
+                string fileName = Path.GetFileNameWithoutExtension(file);
+                if (!DateTime.TryParseExact(fileName, "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime fileDate))
+                    continue;
+
+                var lines = File.ReadAllLines(file);
+                string currentExercise = "";
+                decimal currentWeight = 0;
+
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    string line = lines[i];
+
+                    if (line.StartsWith("EGZERSİZ: "))
                     {
-                        string datePart = line.Replace("İDMAN TARİHİ: ", "").Split(' ')[0];
-                        if (DateTime.TryParseExact(datePart, "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime workoutDate))
+                        currentExercise = line.Replace("EGZERSİZ: ", "").Trim();
+                    }
+                    else if (line.StartsWith("AĞIRLIK: "))
+                    {
+                        string weightPart = line.Replace("AĞIRLIK: ", "").Split(' ')[0];
+                        if (decimal.TryParse(weightPart, out decimal w))
                         {
-                            workoutDays[workoutDate.Date] = true;
+                            currentWeight = w;
+
+                            if (!exerciseData.ContainsKey(currentExercise))
+                                exerciseData[currentExercise] = new List<(DateTime, decimal)>();
+
+                            exerciseData[currentExercise].Add((fileDate, currentWeight));
                         }
                     }
                 }
             }
-            catch (Exception ex)
+
+            Color[] colors = {
+                Color.Red, Color.Blue, Color.Green, Color.Purple,
+                Color.Orange, Color.Brown, Color.Magenta, Color.Cyan,
+                Color.DarkRed, Color.DarkBlue, Color.DarkGreen, Color.DarkGoldenrod
+            };
+            int colorIndex = 0;
+
+            foreach (var kvp in exerciseData)
             {
-                MessageBox.Show($"Takvim yüklenirken hata: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                string exerciseName = kvp.Key;
+                var points = kvp.Value.OrderBy(p => p.Date).ToList();
+
+                var series = new Series(exerciseName)
+                {
+                    ChartType = SeriesChartType.Line,
+                    Color = colors[colorIndex % colors.Length],
+                    BorderWidth = 3
+                };
+
+                foreach (var point in points)
+                {
+                    series.Points.AddXY(point.Date.ToString("dd MMM"), point.Weight);
+                }
+
+                chartProgress.Series.Add(series);
+                colorIndex++;
             }
+        }
+
+        private decimal CalculateWeightIncrease(int minReps)
+        {
+            if (minReps <= 5)
+                return 0m;
+            else if (minReps == 6)
+                return 1.25m;
+            else if (minReps == 7)
+                return 2.5m;
+            else if (minReps >= 8)
+                return 5m;
+            else
+                return 0m;
         }
     }
 
